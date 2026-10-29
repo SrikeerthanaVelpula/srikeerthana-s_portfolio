@@ -1,182 +1,541 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio -  Velpula Srikeerthana</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Velpula Srikeerthana, B.Tech AI & ML student at SR University. Explore projects, technical skills, certifications and achievements.">
+  <title>Velpula Srikeerthana | AI & ML Portfolio</title>
 
-    <!-- Professional CSS -->
-    <style>
-        /* Global reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Poppins", Arial, sans-serif;
-        }
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #182238;
+      --muted: #627087;
+      --accent: #635bff;
+      --accent2: #16b8a6;
+      --border: #e3e8f2;
+    }
 
-        body {
-            background: #f4f6f9;
-            color: #222;
-            line-height: 1.6;
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        /* Header */
-        header {
-            background: linear-gradient(135deg, #111827, #1f2937);
-            color: #fff;
-            padding: 40px 20px;
-            text-align: center;
-            position: relative;
-        }
+    html { scroll-behavior: smooth; }
 
-        header img {
-            width: 130px;
-            height: 130px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 4px solid #38bdf8;
-            margin-bottom: 20px;
-        }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
 
-        header h1 {
-            font-size: 2.2rem;
-        }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
 
-        header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-            margin-top: 5px;
-        }
+    a:hover { text-decoration: underline; }
 
-        /* Sections */
-        section {
-            background: white;
-            padding: 25px;
-            max-width: 900px;
-            margin: 25px auto;
-            border-radius: 12px;
-            box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
-        }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      padding: 18px 7%;
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+    }
 
-        h2 {
-            margin-bottom: 10px;
-            border-left: 4px solid #38bdf8;
-            padding-left: 10px;
-            font-size: 1.6rem;
-        }
+    .brand {
+      font-weight: 800;
+      font-size: 1.15rem;
+    }
 
-        /* Project cards */
-        .project {
-            border: 1px solid #dbe0e7;
-            padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 15px;
-            background: #f9fafb;
-            transition: 0.2s ease-in-out;
-        }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
 
-        .project:hover {
-            background: #eefaff;
-            transform: translateY(-3px);
-            border-color: #38bdf8;
-        }
+    .nav-links a {
+      color: var(--text);
+      font-size: 0.92rem;
+    }
 
-        .project h3 {
-            margin-bottom: 6px;
-            color: #0f172a;
-        }
+    .hero {
+      padding: 76px 7%;
+      color: white;
+      text-align: center;
+      background: linear-gradient(130deg, #171c40, #3730a3, #635bff);
+    }
 
-        /* Links */
-        a {
-            color: #2563eb;
-            text-decoration: none;
-            font-weight: 600;
-        }
+    .profile-photo {
+      width: 145px;
+      height: 145px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 20px;
+      background: #e9e9ff;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
 
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 15px;
-            margin-top: 25px;
-            background: #e5e7eb;
-            color: #444;
-            font-size: 0.9rem;
-        }
-    </style>
+    .hero p {
+      max-width: 680px;
+      margin: 10px auto;
+      color: #e4e7ff;
+    }
+
+    .hero .subtitle {
+      font-size: 1.12rem;
+      font-weight: 600;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 11px 20px;
+      border-radius: 9px;
+      background: white;
+      color: #3730a3;
+      font-weight: 700;
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: white;
+      border: 1px solid #c7c9ff;
+    }
+
+    .container {
+      width: min(1050px, 90%);
+      margin: 35px auto;
+    }
+
+    section {
+      background: var(--card);
+      padding: 28px;
+      margin-bottom: 25px;
+      border: 1px solid var(--border);
+      border-radius: 17px;
+      box-shadow: 0 8px 25px rgba(25, 35, 70, 0.04);
+      scroll-margin-top: 20px;
+    }
+
+    h2 {
+      font-size: 1.55rem;
+      margin-bottom: 18px;
+    }
+
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 25px;
+      background: var(--accent);
+      border-radius: 5px;
+      margin-right: 11px;
+      vertical-align: -4px;
+    }
+
+    h3 { margin-bottom: 8px; }
+
+    .muted { color: var(--muted); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 17px;
+    }
+
+    .item {
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #fcfcff;
+      min-width: 0;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 22px rgba(35, 35, 90, 0.08);
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 14px;
+    }
+
+    .tag {
+      padding: 5px 11px;
+      background: #efedff;
+      color: #4037a6;
+      border-radius: 20px;
+      font-size: 0.86rem;
+      font-weight: 600;
+    }
+
+    .item p { margin-top: 7px; }
+
+    .item .item-link {
+      display: inline-block;
+      margin-top: 13px;
+      font-weight: 700;
+    }
+
+    .timeline {
+      border-left: 3px solid #dcd9ff;
+      padding-left: 19px;
+    }
+
+    .timeline-item {
+      margin-bottom: 22px;
+    }
+
+    .timeline-item:last-child { margin-bottom: 0; }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 15px;
+    }
+
+    .contact-links a {
+      display: inline-block;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 9px 14px;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 650px) {
+      .navbar { justify-content: center; }
+      .nav-links { justify-content: center; gap: 12px; }
+      .hero { padding: 55px 5%; }
+      .container { width: 92%; }
+      section { padding: 21px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
+
 <body>
 
-    <!-- Header with User Image -->
-    <header>
-        <img src="WhatsApp Image 2025-11-23 at 10.57.24 PM.jpeg" alt="Profile Photo">
-        <h1> Velpula Srikeerthana</h1>
-        <p>Student | Web Developer | Cloud & Data Enthusiast</p>
-    </header>
+  <nav class="navbar">
+    <a class="brand" href="#home">Srikeerthana.dev</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-    <!-- About Me -->
+  <header class="hero" id="home">
+    <!-- Keep this filename the same as your actual photo file. -->
+    <img
+      class="profile-photo"
+      src="WhatsApp Image 2025-11-23 at 10.57.24 PM.jpeg"
+      alt="Profile photo of Velpula Srikeerthana"
+    >
+
+    <h1>Hi, I'm Velpula Srikeerthana</h1>
+    <p class="subtitle">B.Tech AI &amp; ML Student | Aspiring AI/ML Developer</p>
+    <p>
+      I enjoy learning artificial intelligence, machine learning,
+      Python development and data analytics while building practical projects.
+    </p>
+
+    <div class="buttons">
+      <a class="btn" href="#projects">Explore My Projects</a>
+      <a class="btn btn-outline"
+         href="https://www.linkedin.com/in/velpula-srikeerthana-4366a5329"
+         target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+      <a class="btn btn-outline"
+         href="https://github.com/SrikeerthanaVelpula"
+         target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+    </div>
+  </header>
+
+  <main class="container">
+
     <section id="about">
-        <h2>About Me</h2>
-        <p>
-        
-        </p>I am a B.Tech 2nd-year student with a growing passion for web development, cloud technologies, and database management. I enjoy transforming ideas into functional, responsive web applications and constantly explore new concepts in front-end and back-end development.
-I believe in writing clean, organized code and designing interfaces that are simple, modern, and easy to use.
-With every project, I aim to learn something new, improve my problem-solving skills, and stay updated with the latest tech trends. I am excited to build more projects, collaborate with others, and grow as a developer.
+      <h2>About Me</h2>
+      <p>
+        I am a B.Tech student specializing in Artificial Intelligence and
+        Machine Learning at SR University, Warangal. I am interested in
+        machine learning, data analytics, web development and solving
+        real-world problems through technology.
+      </p>
+      <p style="margin-top: 12px;">
+        I enjoy exploring new technologies, strengthening my programming
+        skills and developing projects that combine software development
+        with practical applications. I am continuously learning and looking
+        for opportunities to grow through projects, collaboration and
+        technical challenges.
+      </p>
     </section>
 
-    <!-- Skills -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="item">
+        <h3>Bachelor of Technology — Artificial Intelligence &amp; Machine Learning</h3>
+        <p><strong>SR University</strong></p>
+        <p class="muted">Warangal, Telangana, India</p>
+        <p>2024 – 2028</p>
+        <p>Current semester: 3-1</p>
+      </div>
+    </section>
+
     <section id="skills">
-        <h2>Skills</h2>
-        <p><strong>Languages:</strong> HTML, CSS, JavaScript, Python</p>
-        <p><strong>Databases:</strong> MySQL</p>
-        <p><strong>Tools:</strong> Git, GitHub, VS Code, Power BI</p>
+      <h2>Technical Skills</h2>
+      <div class="grid">
+        <div class="item">
+          <h3>Programming</h3>
+          <div class="tag-list">
+            <span class="tag">Python</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+        <div class="item">
+          <h3>AI &amp; Data</h3>
+          <div class="tag-list">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Data Visualization</span>
+          </div>
+        </div>
+        <div class="item">
+          <h3>Tools &amp; Platforms</h3>
+          <div class="tag-list">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">Kaggle</span>
+            <span class="tag">Power BI</span>
+          </div>
+        </div>
+        <div class="item">
+          <h3>Web &amp; Databases</h3>
+          <div class="tag-list">
+            <span class="tag">Flask</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">SQLite</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+      </div>
+      <p class="muted" style="margin-top: 14px;">
+        Edit this section to reflect the technologies you can confidently
+        explain and demonstrate.
+      </p>
     </section>
 
-    <!-- Projects -->
     <section id="projects">
-        <h2>Projects</h2>
+      <h2>Projects</h2>
+      <div class="grid">
 
-        <div class="project">
-            <h3>Student Management System (Flask + SQLite/MySQL)</h3>
-            <p>
-                A complete web application designed to manage student information, including adding new records, updating details, viewing all entries, and deleting data when needed.
-The backend is built with Flask, ensuring smooth routing and database integration, while a relational database (SQLite/MySQL) is used to store and manage student details reliably.
-This project demonstrates CRUD functionality, form handling, template rendering, and structured backend development.
-            </p>    
-            
-            <p><strong>Tech:</strong> Python, Flask, HTML, CSS, SQLite/MySQL</p>
-            <p><a href="https://srikeerthanavelpula.github.io/AI-Assisted-coding-Project/" target="_blank">View on GitHub</a></p>
-        </div>
+        <article class="item">
+          <h3>Smart Crop Advisory System</h3>
+          <p>
+            An agricultural advisory project designed to help farmers make
+            informed crop decisions using soil nutrients and environmental
+            information. The project includes a machine-learning crop
+            recommendation component and a Flask-based web application.
+          </p>
+          <div class="tag-list">
+            <span class="tag">Python</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Flask</span>
+            <span class="tag">Scikit-learn</span>
+          </div>
+          <a class="item-link"
+             href="https://github.com/SrikeerthanaVelpula"
+             target="_blank" rel="noopener noreferrer">
+            Explore my GitHub →
+          </a>
+          <p class="muted">
+            Replace the link above with the direct repository URL when
+            your project repository is available.
+          </p>
+        </article>
 
-        <div class="project">
-            <h3>Power BI Sales Dashboard</h3>
-            <p>
-                Created a highly interactive and data-driven Sales Dashboard using Power BI to help analyze overall business performance. The dashboard includes key KPIs such as total revenue, profit, quantity sold, and customer growth.
-It features dynamic filters, slicers, and date-based insights to allow users to drill down into regions, product categories, and time periods.
-By transforming raw sales data into meaningful visualizations, the dashboard enables better decision-making and showcases strong skills in data cleaning, DAX measures, visualization design, and business analytics.
-            </p>
-            <p><strong>Tech:</strong> Power BI, Excel</p>
-        </div>
+        <article class="item">
+          <h3>Student Management System</h3>
+          <p>
+            A web application for managing student records, including
+            adding, viewing, updating and deleting information. The project
+            demonstrates CRUD operations, form handling and database
+            integration using a Python web framework.
+          </p>
+          <div class="tag-list">
+            <span class="tag">Python</span>
+            <span class="tag">Flask</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">SQLite / MySQL</span>
+          </div>
+          <a class="item-link"
+             href="https://srikeerthanavelpula.github.io/AI-Assisted-coding-Project/"
+             target="_blank" rel="noopener noreferrer">
+            View Project →
+          </a>
+        </article>
 
+        <article class="item">
+          <h3>Power BI Sales Dashboard</h3>
+          <p>
+            An interactive sales analytics dashboard designed to present
+            business performance indicators and explore sales trends using
+            visualizations, filters and date-based analysis.
+          </p>
+          <div class="tag-list">
+            <span class="tag">Power BI</span>
+            <span class="tag">Excel</span>
+            <span class="tag">Data Visualization</span>
+          </div>
+          <a class="item-link"
+             href="https://github.com/SrikeerthanaVelpula"
+             target="_blank" rel="noopener noreferrer">
+            Explore my GitHub →
+          </a>
+        </article>
+
+      </div>
     </section>
 
-    <!-- Contact -->
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <p class="muted" style="margin-bottom: 17px;">
+        Certification titles below are based on the publicly indexed
+        information on my LinkedIn profile. Please verify the displayed
+        titles and attach individual credential links where available.
+      </p>
+
+      <div class="grid">
+        <article class="item">
+          <h3>Certified Forage and Grassland Professional (CFGP)</h3>
+          <p>Provider displayed on LinkedIn: Accenture</p>
+          <p class="muted">Issued: March 2026</p>
+          <a class="item-link"
+             href="https://www.linkedin.com/in/velpula-srikeerthana-4366a5329"
+             target="_blank" rel="noopener noreferrer">
+            View LinkedIn profile →
+          </a>
+        </article>
+
+        <article class="item">
+          <h3>Deloitte internship from forage</h3>
+          <p>Provider displayed on LinkedIn: Forage</p>
+          <p class="muted">Issued: March 2026</p>
+          <a class="item-link"
+             href="https://www.linkedin.com/in/velpula-srikeerthana-4366a5329"
+             target="_blank" rel="noopener noreferrer">
+            View LinkedIn profile →
+          </a>
+        </article>
+
+        <article class="item">
+          <h3>ChatGPT Basics course for beginners</h3>
+          <p>Provider: Cursa</p>
+          <p class="muted">Issued: April 2025</p>
+          <a class="item-link"
+             href="https://www.linkedin.com/in/velpula-srikeerthana-4366a5329"
+             target="_blank" rel="noopener noreferrer">
+            View LinkedIn profile →
+          </a>
+        </article>
+
+        <article class="item">
+          <h3>NCC B Certificate</h3>
+          
+        </article>
+
+        <article class="item">
+          <h3>NCC Camp Certificate</h3>
+          <p>
+           CATC camp, 28/06/2025-07/07/2025 
+          </p>
+          <p class="muted">Certificate details to be verified.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="achievements">
+      <h2>Achievements &amp; Participation</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>National Cadet Corps (NCC)</h3>
+          <p>
+            NCC B Certificate and camp participation. 
+            camp name  CATC Mamnoor.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <h3>Smart India Hackathon (SIH)</h3>
+          <p>
+            Smart Crop Advisory System project work-2025
+          </p>
+        </div>
+      </div>
+    </section>
+
     <section id="contact">
-        <h2>Contact</h2>
-        <p><strong>Email:</strong>srikeerthanavelpula25@gmail.com</p>
-        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/velpulasrikeerthana" target="_blank">Velpula Srikeerthana</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/velpulasrikeerthana" target="_blank">@velpula Srikeerthana</a></p>
+      <h2>Let's Connect</h2>
+      <p>
+        I'm interested in connecting with fellow learners, developers and
+        professionals to share ideas, learn and collaborate on technology
+        projects.
+      </p>
+
+      <div class="contact-links">
+        <a href="https://github.com/SrikeerthanaVelpula"
+           target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/velpula-srikeerthana-4366a5329"
+           target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:srikeerthanavelpula25@gmail.com">Email Me</a>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Velpula Srikeerthana. All rights reserved.</p>
-    </footer>
+  </main>
+
+  <footer>
+    <p>© 2026 Velpula Srikeerthana | Personal Portfolio</p>
+    <p>Built with HTML and CSS · Hosted on GitHub Pages</p>
+  </footer>
 
 </body>
 </html>
-
