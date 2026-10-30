@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Velpula Srikeerthana, B.Tech AI & ML student at SR University. Explore projects, technical skills, certifications and achievements.">
+  <meta name="description" content="Portfolio of Velpula Srikeerthana, B.Tech AI & ML student at SR University.">
   <title>Velpula Srikeerthana | AI & ML Portfolio</title>
 
   <style>
@@ -17,14 +16,16 @@
       --accent2: #16b8a6;
       --border: #e3e8f2;
     }
- 
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       font-family: "Segoe UI", Arial, sans-serif;
@@ -38,7 +39,9 @@
       text-decoration: none;
     }
 
-    a:hover { text-decoration: underline; }
+    a:hover {
+      text-decoration: underline;
+    }
 
     .navbar {
       display: flex;
@@ -155,9 +158,13 @@
       vertical-align: -4px;
     }
 
-    h3 { margin-bottom: 8px; }
+    h3 {
+      margin-bottom: 8px;
+    }
 
-    .muted { color: var(--muted); }
+    .muted {
+      color: var(--muted);
+    }
 
     .grid {
       display: grid;
@@ -195,7 +202,9 @@
       font-weight: 600;
     }
 
-    .item p { margin-top: 7px; }
+    .item p {
+      margin-top: 7px;
+    }
 
     .item .item-link {
       display: inline-block;
@@ -212,7 +221,9 @@
       margin-bottom: 22px;
     }
 
-    .timeline-item:last-child { margin-bottom: 0; }
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
 
     .contact-links {
       display: flex;
@@ -236,40 +247,66 @@
     }
 
     @media (max-width: 650px) {
-      .navbar { justify-content: center; }
-      .nav-links { justify-content: center; gap: 12px; }
-      .hero { padding: 55px 5%; }
-      .container { width: 92%; }
-      section { padding: 21px; }
-      .grid { grid-template-columns: 1fr; }
+      .navbar {
+        justify-content: center;
+      }
+
+      .nav-links {
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .hero {
+        padding: 55px 5%;
+      }
+
+      .container {
+        width: 92%;
+      }
+
+      section {
+        padding: 21px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 
 <body>
 
+  <!-- NAVIGATION -->
   <nav class="navbar">
     <a class="brand" href="#home">Srikeerthana.dev</a>
+
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#education">Education</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#certifications">Certifications</a>
+      <a href="#achievements">Achievements</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
 
+  <!-- HOME -->
   <header class="hero" id="home">
-    <!-- Keep this filename the same as your actual photo file. -->
+
     <img
       class="profile-photo"
-      src="WhatsApp Image 2025-11-23 at 10.57.24 PM.jpeg"
+      src="WhatsApp Image 2026-10-30 at 3.01.43 PM.jpeg"
       alt="Profile photo of Velpula Srikeerthana"
     >
 
     <h1>Hi, I'm Velpula Srikeerthana</h1>
-    <p class="subtitle">B.Tech AI &amp; ML Student | Aspiring AI/ML Developer</p>
+
+    <p class="subtitle">
+      B.Tech AI &amp; ML Student | Aspiring AI/ML Developer
+    </p>
+
     <p>
       I enjoy learning artificial intelligence, machine learning,
       Python development and data analytics while building practical projects.
@@ -277,25 +314,35 @@
 
     <div class="buttons">
       <a class="btn" href="#projects">Explore My Projects</a>
+
       <a class="btn btn-outline"
          href="https://www.linkedin.com/in/velpula-srikeerthana-4366a5329"
-         target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+         target="_blank" rel="noopener noreferrer">
+        LinkedIn Profile
+      </a>
+
       <a class="btn btn-outline"
          href="https://github.com/SrikeerthanaVelpula"
-         target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+         target="_blank" rel="noopener noreferrer">
+        GitHub Profile
+      </a>
     </div>
+
   </header>
 
   <main class="container">
 
+    <!-- ABOUT -->
     <section id="about">
       <h2>About Me</h2>
+
       <p>
         I am a B.Tech student specializing in Artificial Intelligence and
         Machine Learning at SR University, Warangal. I am interested in
         machine learning, data analytics, web development and solving
         real-world problems through technology.
       </p>
+
       <p style="margin-top: 12px;">
         I enjoy exploring new technologies, strengthening my programming
         skills and developing projects that combine software development
@@ -305,10 +352,15 @@
       </p>
     </section>
 
+    <!-- EDUCATION -->
     <section id="education">
       <h2>Education</h2>
+
       <div class="item">
-        <h3>Bachelor of Technology — Artificial Intelligence &amp; Machine Learning</h3>
+        <h3>
+          Bachelor of Technology — Artificial Intelligence &amp; Machine Learning
+        </h3>
+
         <p><strong>SR University</strong></p>
         <p class="muted">Warangal, Telangana, India</p>
         <p>2024 – 2028</p>
@@ -316,9 +368,12 @@
       </div>
     </section>
 
+    <!-- SKILLS -->
     <section id="skills">
       <h2>Technical Skills</h2>
+
       <div class="grid">
+
         <div class="item">
           <h3>Programming</h3>
           <div class="tag-list">
@@ -328,6 +383,7 @@
             <span class="tag">JavaScript</span>
           </div>
         </div>
+
         <div class="item">
           <h3>AI &amp; Data</h3>
           <div class="tag-list">
@@ -338,6 +394,7 @@
             <span class="tag">Data Visualization</span>
           </div>
         </div>
+
         <div class="item">
           <h3>Tools &amp; Platforms</h3>
           <div class="tag-list">
@@ -348,6 +405,7 @@
             <span class="tag">Power BI</span>
           </div>
         </div>
+
         <div class="item">
           <h3>Web &amp; Databases</h3>
           <div class="tag-list">
@@ -357,36 +415,44 @@
             <span class="tag">SQL</span>
           </div>
         </div>
+
       </div>
+
       <p class="muted" style="margin-top: 14px;">
         Edit this section to reflect the technologies you can confidently
         explain and demonstrate.
       </p>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects">
       <h2>Projects</h2>
+
       <div class="grid">
 
         <article class="item">
           <h3>Smart Crop Advisory System</h3>
+
           <p>
             An agricultural advisory project designed to help farmers make
             informed crop decisions using soil nutrients and environmental
             information. The project includes a machine-learning crop
             recommendation component and a Flask-based web application.
           </p>
+
           <div class="tag-list">
             <span class="tag">Python</span>
             <span class="tag">Machine Learning</span>
             <span class="tag">Flask</span>
             <span class="tag">Scikit-learn</span>
           </div>
+
           <a class="item-link"
              href="https://github.com/SrikeerthanaVelpula"
              target="_blank" rel="noopener noreferrer">
             Explore my GitHub →
           </a>
+
           <p class="muted">
             Replace the link above with the direct repository URL when
             your project repository is available.
@@ -394,13 +460,39 @@
         </article>
 
         <article class="item">
+          <h3>AI-Powered Organic Farming Assistant</h3>
+
+          <p>
+            A web application that helps users get AI-assisted answers about
+            organic farming, soil health, composting and sustainable cultivation.
+            Built with a clean interface for interactive responses.
+          </p>
+
+          <div class="tag-list">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">AI Integration</span>
+            <span class="tag">GitHub Pages</span>
+          </div>
+
+          <a class="item-link"
+             href="https://www.linkedin.com/posts/velpula-srikeerthana-4366a5329_sruniversity-cse-computerscienceengineering-ugcPost-7396571907032113154-q2_z"
+             target="_blank" rel="noopener noreferrer">
+            View project post →
+          </a>
+        </article>
+
+        <article class="item">
           <h3>Student Management System</h3>
+
           <p>
             A web application for managing student records, including
             adding, viewing, updating and deleting information. The project
             demonstrates CRUD operations, form handling and database
             integration using a Python web framework.
           </p>
+
           <div class="tag-list">
             <span class="tag">Python</span>
             <span class="tag">Flask</span>
@@ -408,6 +500,7 @@
             <span class="tag">CSS</span>
             <span class="tag">SQLite / MySQL</span>
           </div>
+
           <a class="item-link"
              href="https://srikeerthanavelpula.github.io/AI-Assisted-coding-Project/"
              target="_blank" rel="noopener noreferrer">
@@ -417,16 +510,19 @@
 
         <article class="item">
           <h3>Power BI Sales Dashboard</h3>
+
           <p>
             An interactive sales analytics dashboard designed to present
             business performance indicators and explore sales trends using
             visualizations, filters and date-based analysis.
           </p>
+
           <div class="tag-list">
             <span class="tag">Power BI</span>
             <span class="tag">Excel</span>
             <span class="tag">Data Visualization</span>
           </div>
+
           <a class="item-link"
              href="https://github.com/SrikeerthanaVelpula"
              target="_blank" rel="noopener noreferrer">
@@ -437,19 +533,71 @@
       </div>
     </section>
 
+    <!-- CERTIFICATIONS -->
     <section id="certifications">
-      <h2>Certifications</h2>
-      <p class="muted" style="margin-bottom: 17px;">
-        Certification titles below are based on the publicly indexed
-        information on my LinkedIn profile. Please verify the displayed
-        titles and attach individual credential links where available.
-      </p>
+      <h2>Certifications &amp; Virtual Experiences</h2>
 
       <div class="grid">
+
+        <article class="item">
+          <h3>Data Science Essentials with Python</h3>
+
+          <p><strong>Provider:</strong> Cisco Networking Academy</p>
+          <p class="muted">Issued: October 26, 2026</p>
+
+          <p>
+            Python data tools, Pandas, data cleaning, data visualization,
+            linear models and hypothesis testing.
+          </p>
+
+          <a class="item-link"
+             href="DataScienceEssentialswithPythonv120261026-21-gyvow_Certification.pdf"
+             target="_blank" rel="noopener noreferrer">
+            View certificate PDF →
+          </a>
+        </article>
+
+        <article class="item">
+          <h3>Accenture Virtual Internship — Technology Consulting</h3>
+
+          <p><strong>Platform:</strong> Forage</p>
+
+          <p>
+            Completed activities involving requirements gathering, stakeholder
+            analysis, online voting ballot-module design, process flows,
+            data schemas and Agile user stories.
+          </p>
+
+          <a class="item-link"
+             href="https://www.linkedin.com/posts/velpula-srikeerthana-4366a5329_virtualinternship-technologyconsulting-agile-share-7439736424280674304-KRMU"
+             target="_blank" rel="noopener noreferrer">
+            View completion post →
+          </a>
+        </article>
+
+        <article class="item">
+          <h3>Deloitte Data Analytics Virtual Experience Program</h3>
+
+          <p><strong>Platform:</strong> Forage</p>
+
+          <p>
+            Completed a virtual experience focused on data analysis,
+            data visualization and solving business problems using data.
+          </p>
+
+          <a class="item-link"
+             href="https://lnkd.in/p/gD9BPPK9"
+             target="_blank" rel="noopener noreferrer">
+            View completion post →
+          </a>
+        </article>
+
         <article class="item">
           <h3>Certified Forage and Grassland Professional (CFGP)</h3>
-          <p>Provider displayed on LinkedIn: Accenture</p>
+
+          <p><strong>Provider displayed on LinkedIn:</strong> Accenture</p>
           <p class="muted">Issued: March 2026</p>
+
           <a class="item-link"
              href="https://www.linkedin.com/in/velpula-srikeerthana-4366a5329"
              target="_blank" rel="noopener noreferrer">
@@ -458,20 +606,11 @@
         </article>
 
         <article class="item">
-          <h3>Deloitte internship from forage</h3>
-          <p>Provider displayed on LinkedIn: Forage</p>
-          <p class="muted">Issued: March 2026</p>
-          <a class="item-link"
-             href="https://www.linkedin.com/in/velpula-srikeerthana-4366a5329"
-             target="_blank" rel="noopener noreferrer">
-            View LinkedIn profile →
-          </a>
-        </article>
+          <h3>ChatGPT Basics Course for Beginners</h3>
 
-        <article class="item">
-          <h3>ChatGPT Basics course for beginners</h3>
-          <p>Provider: Cursa</p>
+          <p><strong>Provider:</strong> Cursa</p>
           <p class="muted">Issued: April 2025</p>
+
           <a class="item-link"
              href="https://www.linkedin.com/in/velpula-srikeerthana-4366a5329"
              target="_blank" rel="noopener noreferrer">
@@ -481,40 +620,167 @@
 
         <article class="item">
           <h3>NCC B Certificate</h3>
-          
+          <p>National Cadet Corps (NCC)</p>
+          <p class="muted">
+            Certificate details and issue date can be added when available.
+          </p>
         </article>
 
         <article class="item">
           <h3>NCC Camp Certificate</h3>
-          <p>
-           CATC camp, 28/06/2025-07/07/2025 
-          </p>
-          <p class="muted">Certificate details to be verified.</p>
+          <p>CATC Camp, Mamnoor</p>
+          <p class="muted">June 28, 2025 – July 7, 2025</p>
         </article>
+
       </div>
     </section>
 
+    <!-- ACHIEVEMENTS -->
     <section id="achievements">
-      <h2>Achievements &amp; Participation</h2>
+      <h2>Achievements, Hackathons &amp; Experience</h2>
+
       <div class="timeline">
+
+        <div class="timeline-item">
+          <h3>Smart India Hackathon (SIH) 2026 — Participation</h3>
+
+          <p>
+            Participated in the Smart India Hackathon and shared the
+            participation certificate and experience.
+          </p>
+
+          <a class="item-link"
+             href="https://www.linkedin.com/posts/velpula-srikeerthana-4366a5329_sih2026-hackathon-innovation-share-7504353422557462528-dTgr"
+             target="_blank" rel="noopener noreferrer">
+            View SIH participation post →
+          </a>
+        </div>
+
+        <div class="timeline-item">
+          <h3>AgriSmart — Smart Crop Advisory System for Farmers</h3>
+
+          <p>
+            Worked with a team on AgriSmart, a Smart India Hackathon project
+            focused on smart crop advisory for farmers. The team post names
+            you among its contributors.
+          </p>
+
+          <a class="item-link"
+             href="https://www.linkedin.com/posts/akhilesh-krishna_smartindiahackathon-sih-innovation-ugcPost-7500792549385592833-Mhdx"
+             target="_blank" rel="noopener noreferrer">
+            View team project post →
+          </a>
+        </div>
+
+        <div class="timeline-item">
+          <h3>SIH — Organic Farming Theme</h3>
+
+          <p>
+            Shared an experience of understanding real-world agricultural
+            challenges and thinking about innovative solutions around
+            organic farming.
+          </p>
+
+          <a class="item-link"
+             href="https://www.linkedin.com/posts/velpula-srikeerthana-4366a5329_profdr-sheshikala-martha-mandala-share-7404206851891871744-X08I"
+             target="_blank" rel="noopener noreferrer">
+            View experience post →
+          </a>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Virtual Internship — Technology Consulting</h3>
+
+          <p>
+            Completed the Accenture Technology Consulting virtual internship
+            through Forage, including requirements gathering, stakeholder
+            analysis, process flows, data schema and Agile user stories.
+          </p>
+
+          <a class="item-link"
+             href="https://www.linkedin.com/posts/velpula-srikeerthana-4366a5329_virtualinternship-technologyconsulting-agile-share-7439736424280674304-KRMU"
+             target="_blank" rel="noopener noreferrer">
+            View LinkedIn post →
+          </a>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Virtual Experience — Deloitte Data Analytics</h3>
+
+          <p>
+            Completed the Deloitte Data Analytics Virtual Experience Program
+            through Forage, with learning in data analysis and visualization.
+          </p>
+
+          <a class="item-link"
+             href="https://lnkd.in/p/gD9BPPK9"
+             target="_blank" rel="noopener noreferrer">
+            View LinkedIn post →
+          </a>
+        </div>
+
         <div class="timeline-item">
           <h3>National Cadet Corps (NCC)</h3>
+
           <p>
-            NCC B Certificate and camp participation. 
-            camp name  CATC Mamnoor.
+            NCC B Certificate and CATC camp participation at Mamnoor,
+            June 28, 2025 – July 7, 2025.
           </p>
         </div>
+
         <div class="timeline-item">
-          <h3>Smart India Hackathon (SIH)</h3>
+          <h3>SR University — First Achievement Post</h3>
+
           <p>
-            Smart Crop Advisory System project work-2025
+            Shared a post describing it as a first achievement at SR University.
+            The public text preview does not identify the specific award or
+            activity, so this entry links to the original post for details.
           </p>
+
+          <a class="item-link"
+             href="https://www.linkedin.com/posts/velpula-srikeerthana-4366a5329_sru-share-7295080294578036736-TnTO"
+             target="_blank" rel="noopener noreferrer">
+            View first achievement post →
+          </a>
         </div>
+
+        <div class="timeline-item">
+          <h3>Additional LinkedIn Update — InternPe</h3>
+
+          <p>
+            An earlier LinkedIn post associated with InternPe. Open the
+            original post to view its image and full context.
+          </p>
+
+          <a class="item-link"
+             href="https://www.linkedin.com/posts/velpula-srikeerthana-4366a5329_share-7335313059193724928-5pL5"
+             target="_blank" rel="noopener noreferrer">
+            View LinkedIn post →
+          </a>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Additional LinkedIn Update</h3>
+
+          <p>
+            Included from the LinkedIn link you shared; the public preview
+            does not provide enough text to describe the item accurately.
+          </p>
+
+          <a class="item-link"
+             href="https://www.linkedin.com/posts/velpula-srikeerthana-4366a5329_share-7309989518168793088-RQSp"
+             target="_blank" rel="noopener noreferrer">
+            View original post →
+          </a>
+        </div>
+
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact">
       <h2>Let's Connect</h2>
+
       <p>
         I'm interested in connecting with fellow learners, developers and
         professionals to share ideas, learn and collaborate on technology
@@ -522,16 +788,27 @@
       </p>
 
       <div class="contact-links">
+
         <a href="https://github.com/SrikeerthanaVelpula"
-           target="_blank" rel="noopener noreferrer">GitHub</a>
+           target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+
         <a href="https://www.linkedin.com/in/velpula-srikeerthana-4366a5329"
-           target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="mailto:srikeerthanavelpula25@gmail.com">Email Me</a>
+           target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+
+        <a href="mailto:srikeerthanavelpula25@gmail.com">
+          srikeerthanavelpula25@gmail.com
+        </a>
+
       </div>
     </section>
 
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <p>© 2026 Velpula Srikeerthana | Personal Portfolio</p>
     <p>Built with HTML and CSS · Hosted on GitHub Pages</p>
